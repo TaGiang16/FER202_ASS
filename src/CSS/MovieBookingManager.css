@@ -1,0 +1,19 @@
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.badge {
+    padding: 5px 10px;
+    font-size: 14px;
+}

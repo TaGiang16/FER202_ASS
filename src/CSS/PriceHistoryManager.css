@@ -1,0 +1,25 @@
+h2 {
+    font-family: "Arial", sans-serif;
+    color: #007bff;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.table-dark th {
+    background-color: #212529;
+}
+
+.text-danger del {
+    color: #dc3545 !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.badge {
+    font-size: 0.9rem;
+}

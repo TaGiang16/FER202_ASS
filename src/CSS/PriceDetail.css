@@ -1,0 +1,24 @@
+.position-relative {
+    position: relative;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+button {
+    border-radius: 5px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
