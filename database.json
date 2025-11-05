@@ -1,0 +1,1179 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "password": "lucduong2002",
+      "role": "1",
+      "dob": "1990-01-01",
+      "address": "123, Hà Đông, Hà Nội",
+      "email": "admin@rapchieuphim.vn",
+      "phone": "0901234560",
+      "full_name": "Admin Văn Admin",
+      "status": "active",
+      "gender": "Nam",
+      "tickets": []
+    },
+    {
+      "id": "2",
+      "password": "Lucduong2002",
+      "role": "2",
+      "dob": "2002-10-03",
+      "address": "123, Hà Đông, Hà Nội",
+      "email": "lucduongty@gmail.com",
+      "phone": "0354994218",
+      "full_name": "Dương Văn Lực",
+      "status": "active",
+      "gender": "Nam",
+      "tickets": [
+        {
+          "id": "113b083e-bc0c-4215-8017-0c5208581cf5",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H1",
+            "H2",
+            "H3",
+            "H4",
+            "H5",
+            "H6",
+            "H7",
+            "H8",
+            "H9",
+            "H10",
+            "H11",
+            "H12"
+          ],
+          "date": "05-12-2024",
+          "startTime": "20:00",
+          "endTime": "22:55",
+          "totalPrice": 1440000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "8b5bbca1-98e3-435a-96b6-40f71f12bfec",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "C7",
+            "C6",
+            "B8",
+            "A9",
+            "A10",
+            "B11",
+            "C12",
+            "D12",
+            "E11",
+            "F10",
+            "G9",
+            "H8",
+            "H7",
+            "H6",
+            "G5",
+            "F4",
+            "E3",
+            "D2",
+            "C1",
+            "B2",
+            "A3",
+            "A4",
+            "B5"
+          ],
+          "date": "05-12-2024",
+          "startTime": "19:00",
+          "endTime": "21:55",
+          "totalPrice": 2880000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "1308f323-cc43-4eec-b577-de9ba453f6ff",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "F12",
+            "G12",
+            "H12"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 360000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "7dbed0a1-ae74-4837-9d23-6052d95004af",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "F11",
+            "G11",
+            "H11"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 360000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "86edd67f-a88a-47ef-b2ad-668f020d1ec0",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "E7",
+            "E8"
+          ],
+          "date": "05-12-2024",
+          "startTime": "20:00",
+          "endTime": "22:55",
+          "totalPrice": 240000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "dadb73c3-4fc2-4946-a094-4fa8cf2b517f",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H7",
+            "H6"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 240000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "4c93ebb8-eda5-4a7f-a90d-fa1d0025329a",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "C9",
+            "C8"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 240000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "572b",
+      "full_name": "luc",
+      "email": "jjjj@gmail.com",
+      "password": "lUCDUONG2002",
+      "dob": "2024-12-04",
+      "phone": "0987777777",
+      "gender": "Male",
+      "address": "HÀ NỘI",
+      "role": "2",
+      "status": "active",
+      "tickets": [
+        {
+          "id": "010bc26a-06e1-4ab4-b56f-a0c5f56093a4",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H10",
+            "H11",
+            "H12"
+          ],
+          "date": "05-12-2024",
+          "startTime": "19:00",
+          "endTime": "21:55",
+          "totalPrice": 360000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "81480405-1697-4878-945d-74cc614d1bb4",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "D6"
+          ],
+          "date": "05-12-2024",
+          "startTime": "19:00",
+          "endTime": "21:55",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "c71cf90c-59f1-4f5e-9635-3fdac9c9e026",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "A12"
+          ],
+          "date": "05-12-2024",
+          "startTime": "19:00",
+          "endTime": "21:55",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "ce83",
+      "full_name": "Pham Quang Huy",
+      "email": "huycan8723@gmail.com",
+      "password": "Huycan8723@",
+      "dob": "2003-07-08",
+      "phone": "0368887274",
+      "gender": "Male",
+      "address": "Ha Noi",
+      "role": "2",
+      "status": "active",
+      "tickets": [
+        {
+          "id": "0b962c40-1a74-4b0d-a55f-5ef79f2ec5fa",
+          "movie": "Quỷ Treo Đầu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H8",
+            "H7"
+          ],
+          "date": "05-12-2024",
+          "startTime": "10:30",
+          "endTime": "13:15",
+          "totalPrice": 220000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "5654",
+      "full_name": "P.QuocHuy",
+      "email": "pqhuy123i@gmail.com",
+      "password": "123456Aa",
+      "dob": "2003-09-03",
+      "phone": "0965145210",
+      "gender": "Male",
+      "address": "67FPT",
+      "role": "2",
+      "status": "active",
+      "tickets": [
+        {
+          "id": "9edc26a7-3382-4790-8cb6-8e98c179fe9d",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "9b9ff1c5-ee30-464b-8f84-43e42dbfab05",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "A6",
+            "A7",
+            "A8",
+            "A9"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 480000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "05c75e09-c23c-48b4-b9e2-885fbe6a5a43",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H9",
+            "H10"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 240000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "f517daf8-3db9-45ba-a843-f5c78d08c4b8",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "B9"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "85857a48-99a2-4b64-8975-02faa66d8563",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "E12"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "f6feed22-b8e2-4985-8550-9d08e98d6d3c",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "E12"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "5576aa81-0958-4b62-be68-1fe20f60f2b0",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "C12",
+            "C11",
+            "A11"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 360000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "63391572-aaa8-4440-8fbd-c24266b564ab",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "C12",
+            "C11",
+            "A11"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 360000,
+          "screen": "2",
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "cccf",
+      "full_name": "huy",
+      "email": "huy2019den@gmail.com",
+      "password": "Huyden09",
+      "dob": "2003-09-03",
+      "phone": "0123456781",
+      "gender": "Nam",
+      "address": "nha",
+      "role": "2",
+      "status": "active",
+      "tickets": [
+        {
+          "id": "6bce81e9-3199-4ae8-a3ea-d9b58d1e84ee",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "G12"
+          ],
+          "date": "05-12-2024",
+          "startTime": "20:00",
+          "endTime": "22:55",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "38684df8-5971-4064-9e07-8d8b03a9253e",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H9"
+          ],
+          "date": "05-12-2024",
+          "startTime": "19:00",
+          "endTime": "21:55",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        },
+        {
+          "id": "5542b441-5dcf-4e29-9474-4c6438a211ad",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-12-5",
+          "startTime": "19:00:00",
+          "endTime": "21:55:00",
+          "totalPrice": 120000,
+          "screen": "1",
+          "status": "inactive"
+        },
+        {
+          "id": "23ecfd0a-7f65-40d3-8844-0f2ae0c9634b",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-12-5",
+          "startTime": "19:00:00",
+          "endTime": "21:55:00",
+          "totalPrice": 120000,
+          "screen": "1",
+          "status": "inactive"
+        },
+        {
+          "id": "a903aa6e-061c-471e-a805-4c27b07dbd7e",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "1",
+          "seats": [
+            "E9"
+          ],
+          "date": "2024-12-5",
+          "startTime": "20:00:00",
+          "endTime": "22:55:00",
+          "totalPrice": 120000,
+          "screen": "1",
+          "status": "inactive"
+        },
+        {
+          "id": "70b965c4-8ce1-4fbb-97b7-9bfa6e8bebbe",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "A1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "a8a32cd6-544a-4dec-8025-6d9fcc2cefa1",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "33612294-dd13-4528-8be0-b26225bcd905",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "F6"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "3764617a-a8df-4ddd-9450-c082a064035c",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "F1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "eca4a049-38b8-49aa-8926-ec763f60cf0b",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H5",
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 240000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "76e806f5-f579-4e36-8d8c-97374f385cbf",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "F1"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "523c2916-fcfd-424a-ab50-3a7d772896fe",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "1",
+          "seats": [
+            "H2",
+            "H1"
+          ],
+          "date": "2024-12-5",
+          "startTime": "19:00:00",
+          "endTime": "21:55:00",
+          "totalPrice": 240000,
+          "screen": "1",
+          "status": "inactive"
+        },
+        {
+          "id": "5ad94a41-b694-4acf-ad9d-12bf757a8c2b",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "1",
+          "seats": [
+            "H2",
+            "H1"
+          ],
+          "date": "2024-12-5",
+          "startTime": "19:00:00",
+          "endTime": "21:55:00",
+          "totalPrice": 240000,
+          "screen": "1",
+          "status": "inactive"
+        },
+        {
+          "id": "12c3867b-5ed1-473f-9efe-09e97ae0c105",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-12-5",
+          "startTime": "19:00:00",
+          "endTime": "21:55:00",
+          "totalPrice": 120000,
+          "screen": "1",
+          "status": "inactive"
+        },
+        {
+          "id": "8fbcf2af-a1ec-41fe-bf8f-63f5c8b9a97b",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "65700ab6-6dae-4520-a7ca-9d92dc7038d4",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "4e4186c7-3675-4ffc-8f57-efc830ab9477",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "ee8adcf0-5a1d-431f-ba19-af8f205ac0b6",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H2"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "7e55f3b3-1852-4dac-95ba-15045beedc38",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "738412cf-8b7c-4354-b6d5-c0f3b95c8029",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "44e397ad-00c2-4cd7-81de-5d0eddfc451f",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "021b1e8e-f54f-40d2-a474-1a309a273058",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "7f37e516-948b-436f-9d5a-8d58ba60832f",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "C5"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "ff65c2d5-b33f-43bc-83db-7c9decc52488",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1",
+            "H2",
+            "H3"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 360000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "73373a99-0f60-468b-a816-c829f1bd2ed6",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H1",
+            "H2",
+            "H3"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 360000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "cc543fbb-3750-4fdf-afed-9eaa5d242810",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "H6",
+            "A10"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 240000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "5600017b-5836-4f49-bad9-b34cc7f44708",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "F10",
+            "H1",
+            "H7",
+            "H8"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 480000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "fb5a0af4-0210-4c3e-a7e6-1daf515981de",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "C7",
+            "C6",
+            "C5"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 360000,
+          "screen": "2",
+          "status": "inactive"
+        },
+        {
+          "id": "08b0eb32-1e54-43be-9dad-dd68b1b4d0cb",
+          "movie": "Linh Miêu",
+          "cinema": "1",
+          "seats": [
+            "C7"
+          ],
+          "date": "2024-11-24",
+          "startTime": "15:00:00",
+          "endTime": "17:42:00",
+          "totalPrice": 120000,
+          "screen": "2",
+          "status": "inactive"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "name": "admin"
+    },
+    {
+      "id": "2",
+      "name": "customer"
+    }
+  ],
+  "cinema": [
+    {
+      "id": "1",
+      "name": "Rạp Chiếu Movie88",
+      "address": "123, Hà Đông, Hà Nội",
+      "contact": {
+        "phone": "0123456789",
+        "email": "contact@rapchieuphim.vn"
+      },
+      "description": "Chào mừng đến với Rạp Chiếu Phim Movie88, nơi mang đến những trải nghiệm điện ảnh tuyệt vời. Chúng tôi cung cấp các bộ phim mới nhất và không gian giải trí thoải mái cho mọi lứa tuổi."
+    }
+  ],
+  "movietypes": [
+    {
+      "name": "Phim đang chiếu",
+      "id": "1",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Phim sắp chiếu",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "name": "Suất chiếu đặc biệt",
+      "status": "active"
+    }
+  ],
+  "genres": [
+    {
+      "id": "1",
+      "name": "Hành động",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Khoa học viễn tưởng",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "name": "Hoạt hình",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "name": "Phiêu lưu",
+      "status": "active"
+    },
+    {
+      "id": "5",
+      "name": "Kinh Dị",
+      "status": "active"
+    },
+    {
+      "id": "6",
+      "name": "Tâm Lý",
+      "status": "active"
+    },
+    {
+      "id": "7",
+      "name": "Hài",
+      "status": "active"
+    }
+  ],
+  "languages": [
+    {
+      "id": "1",
+      "name": "Tiếng Anh",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Tiếng Việt lồng tiếng",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "name": "Tiếng Việt phụ đề",
+      "status": "active"
+    },
+    {
+      "id": "5fc7",
+      "name": "Tiếng Nhật",
+      "status": "active"
+    },
+    {
+      "id": "0984",
+      "name": "Tiếng Hàn",
+      "status": "active"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "title": "Linh Miêu",
+      "director": "Lưu Thành Luân",
+      "actor": "Hồng Đào, Thiên An, Thuỳ Tiên, Văn Anh, Samuel An,...",
+      "description": "Linh Miêu: Quỷ Nhập Tràng lấy cảm hứng từ truyền thuyết dân gian về “quỷ nhập tràng” để xây dựng cốt truyện. Phim lồng ghép những nét văn hóa đặc trưng của Huế như nghệ thuật khảm sành - một văn hóa đặc sắc của thời nhà Nguyễn, đề cập đến các vấn đề về giai cấp và quan điểm trọng nam khinh nữ. Đặc biệt, hình ảnh rước kiệu thây ma và những hình nhân giấy không chỉ biểu trưng cho tai ương hay điềm dữ mà còn là hiện thân của nghiệp quả.",
+      "genre_ids": [
+        5
+      ],
+      "duration": 109,
+      "language_id": "3",
+      "movie_type": "1",
+      "release_date": "22-11-2024",
+      "video_url": "https://www.youtube.com/embed/QBMhv3FLW_Q",
+      "banner": "image/linhmieufilm.png",
+      "poster": [
+        "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f14%2f400x633%2D16%2D114807%2D141124%2D90.jpg"
+      ],
+      "status": "active",
+      "showtimes": [
+        {
+          "id": "1",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-12-5",
+          "start_time": "10:00:00",
+          "end_time": "13:12:00",
+          "price": 100000
+        },
+        {
+          "id": "2",
+          "cinema_id": "1",
+          "screen_id": "2",
+          "date": "2024-11-24",
+          "start_time": "15:00:00",
+          "end_time": "17:42:00",
+          "price": 120000
+        },
+        {
+          "id": "3",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-12-5",
+          "start_time": "20:00:00",
+          "end_time": "22:52:00",
+          "price": 140000
+        },
+        {
+          "id": "4",
+          "cinema_id": "1",
+          "screen_id": "2",
+          "date": "2024-12-24",
+          "start_time": "22:00:00",
+          "end_time": "00:32:00",
+          "price": 160000
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Quỷ Treo Đầu",
+      "genre_ids": [
+        5
+      ],
+      "description": "Petai & Nicha - cặp đôi trẻ đẹp liên tục bị quấy phá sau khi chuyển đến ngôi nhà gia truyền của Nicha. Từ những tiếng động cót két chói tai đến những cái chết mất xác; tất cả đều xuất phát từ một lời nguyền cổ xưa ma quái.",
+      "director": "Bo Nipan Chawcharernpon",
+      "actor": "Khun Chanon Ukkharachata, Aniporn Chalermburanawong",
+      "duration": 97,
+      "language_id": "3",
+      "movie_type": "2",
+      "release_date": "29-11-2024",
+      "video_url": "https://www.youtube.com/embed/yjL9YgnmVlg",
+      "banner": "https://files.betacorp.vn/media/images/2024/11/20/1702x621-24-162735-201124-55.jpg",
+      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f20%2f400x633%2D17%2D162001%2D201124%2D70.jpg",
+      "status": "active",
+      "showtimes": [
+        {
+          "id": "5",
+          "cinema_id": "1",
+          "screen_id": "2",
+          "date": "2024-12-5",
+          "start_time": "19:00:00",
+          "end_time": "21:50:00",
+          "price": 140000
+        },
+        {
+          "id": "6",
+          "cinema_id": "1",
+          "screen_id": "2",
+          "date": "2024-12-5",
+          "start_time": "10:30:00",
+          "end_time": "13:15:00",
+          "price": 110000
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "BLUE PERIOD",
+      "genre_ids": [
+        "6"
+      ],
+      "description": "Dựa trên bộ manga ăn khách cùng tên của tác giả Yamaguchi Tsubasa đã chiến thắng giải Manga Taisho năm 2020. Dưới vỏ bọc của một nam sinh xuất sắc, Yatora Yaguchi luôn cố gắng hết sức để làm hài lòng mọi người. Cậu chưa bao giờ cảm thấy mình thật sự đang sống cho đến khi cậu bắt đầu vẽ bức tranh về khung cảnh sáng sớm dưới màu xanh huyền ảo tại Shibuya. Lần đầu tiên trong cuộc đời tăm tối của mình, Yatora nhận ra được nhịp đập trái tim mạnh mẽ dành cho hội họa và nghệ thuật. Tôi không phải thiên tài, nhưng tôi sẽ phấn đấu cho đến khi trở thành thiên tài!",
+      "director": "Kentaro Hagiwara",
+      "actor": "Gordon Maeda; Fumiya Takahashi; Rihito Itagaki; Hiyori Sakurada",
+      "duration": 115,
+      "language_id": "3",
+      "movie_type": "3",
+      "release_date": "29-11-2024",
+      "video_url": "https://www.youtube.com/embed/bMcNeq229Ms",
+      "banner": " https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/b/l/blue.jpg",
+      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f22%2f400x633%2D110130%2D221124%2D27.jpg",
+      "status": "active",
+      "showtimes": [
+        {
+          "id": "7",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-12-5",
+          "start_time": "20:00:00",
+          "end_time": "22:55:00",
+          "price": 120000
+        },
+        {
+          "id": "8",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-12-5",
+          "start_time": "19:00:00",
+          "end_time": "21:55:00",
+          "price": 120000
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "CƯỜI XUYÊN BIÊN GIỚI",
+      "genre_ids": [
+        "7"
+      ],
+      "description": "Cười Xuyên Biên Giới kể về hành trình của Jin-bong (Ryu Seung-ryong) - cựu vô địch bắn cung quốc gia, sau khi nghỉ hưu, anh đã trở thành một nhân viên văn phòng bình thường. Đứng trước nguy cơ bị sa thải, Jin-bong phải nhận một nhiệm vụ bất khả thi là bay đến nửa kia của trái đất trong nỗ lực tuyệt vọng để sinh tồn. Sống sót sau một sự cố đe doạ tính mạng, Jin-bong đã “hạ cánh” xuống khu rừng Amazon, nơi anh gặp bộ ba thổ dân bản địa có kỹ năng bắn cung thượng thừa: Sika, Eeba và Walbu. Tin rằng đã tìm ra cách để tự cứu mình, Jin-bong hợp tác với phiên dịch ngáo ngơ Bbang-sik (Jin Sun-kyu) và đưa ba chiến thần cung thủ đến Hàn Quốc cho một nhiệm vụ táo bạo.",
+      "director": "KIM Chang-ju",
+      "actor": " Ryu Seung-ryong , Jin Sun-kyu, Igor Rafael P EDROSO, Luan B RUM DE ABREU E LIMA, JB João Batista GOMES DE O LIVEIRA, Yeom Hye-ran và Go Kyoung- pyo, Lee Soon-won",
+      "duration": 113,
+      "language_id": "3",
+      "movie_type": "1",
+      "release_date": "15-11-2024",
+      "video_url": "https://www.youtube.com/embed/c-XbI-G6bqE",
+      "banner": "https://i.ytimg.com/vi/4bdsuhHnj1c/maxresdefault.jpg",
+      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f08%2f400wx633h%2D1%2D154452%2D081124%2D12.jpg",
+      "status": "active",
+      "showtimes": [
+        {
+          "id": "9",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-12-5",
+          "start_time": "19:00:00",
+          "end_time": "21:55:00",
+          "price": 120000
+        },
+        {
+          "id": "10",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-12-5",
+          "start_time": "20:00:00",
+          "end_time": "22:55:00",
+          "price": 120000
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Công tử bạc liêu",
+      "genre_ids": [
+        "2",
+        "3"
+      ],
+      "description": "Phim hay quá đi ",
+      "director": "Phạm Quang Huy",
+      "actor": "Lực Sỹ",
+      "duration": "122123",
+      "language_id": "2",
+      "movie_type": "1",
+      "release_date": "2024-12-10",
+      "video_url": "https://www.youtube.com/embed/QBMhv3FLW_Q",
+      "banner": "https://www.cgv.vn/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/o/n/onl_rolling_980x448_8.jpg",
+      "poster": [
+        "https://files.betacorp.vn/media%2fimages%2f2024%2f10%2f16%2f400wx633h%2D162649%2D161024%2D28.jpg"
+      ],
+      "status": "active",
+      "showtimes": [
+        {
+          "cinema_id": "",
+          "screen_id": "2",
+          "date": "2024-12-18",
+          "start_time": "19:06",
+          "price": 100000,
+          "end_time": "20:10"
+        }
+      ]
+    }
+  ],
+  "screens": [
+    {
+      "id": "1",
+      "name": "Phòng Chiếu Số 1",
+      "seating_capacity": "120",
+      "type": "2D",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Phòng Chiếu Số 2",
+      "seating_capacity": 80,
+      "type": "3D",
+      "status": "active"
+    }
+  ],
+  "ticketPricing": [
+    {
+      "id": "1",
+      "type": "Người Lớn",
+      "price": 100000,
+      "ageGroup": "18+",
+      "rules": [
+        "Áp dụng cho người từ 18 tuổi trở lên",
+        "Phim hành động, kinh dị, các bộ phim nhạy cảm"
+      ]
+    },
+    {
+      "id": "2",
+      "type": "Trẻ Em",
+      "price": 50000,
+      "ageGroup": "5-12",
+      "rules": [
+        "Áp dụng cho trẻ em từ 5 đến 12 tuổi",
+        "Phim hoạt hình, phim gia đình"
+      ]
+    },
+    {
+      "id": "3",
+      "type": "Sinh Viên / Học Sinh",
+      "price": 70000,
+      "ageGroup": "12-22",
+      "rules": [
+        "Áp dụng cho học sinh, sinh viên có thẻ học sinh/sinh viên",
+        "Phim phù hợp với đối tượng học sinh, sinh viên"
+      ]
+    }
+  ]
+}
