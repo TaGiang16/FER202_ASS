@@ -3,9 +3,8 @@ import { Card, Button, Form, InputGroup, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { fetchData } from "../../API/ApiService";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import ForgotPassword from './ForgotPassword';
 
-const Login = ({ setCurrentForm }) => {
+const Login = ({}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [remember, setRemember] = useState(false);
@@ -95,7 +94,7 @@ const Login = ({ setCurrentForm }) => {
           value={password}
           onChange={e => setPassword(e.target.value)}
           required
-          style={{ paddingRight: "40px" }} // Add padding for the icon
+          style={{ paddingRight: "40px" }}
         />
         <div 
           style={{
@@ -129,11 +128,11 @@ const Login = ({ setCurrentForm }) => {
         <Form.Check.Label htmlFor="remember">Remember</Form.Check.Label>
       </Form.Group>
 
-      <Button type="submit" className="btn-danger w-100" disabled={isLoading}>
+      <Button type="submit" className="btn-warning w-100" disabled={isLoading}>
         {isLoading ? (
           <Spinner animation="border" size="sm" />
         ) : (
-          <i className="bi bi-box-arrow-in-right"> Đăng nhập</i>
+          <i className="bi bi-person-plus-fill"> Đăng nhập</i>
         )}
       </Button>
     </Form>

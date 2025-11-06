@@ -25,7 +25,7 @@ const Register = ({ setCurrentForm }) => {
 
     if (!full_name) validationErrors.full_name = "Họ và tên không được bỏ trống!";
     if (!gender) validationErrors.gender = "Giới tính không được bỏ trống!";
-    
+
     // Email validation
     if (!email) {
       validationErrors.email = "Email không được bỏ trống!";
@@ -78,25 +78,23 @@ const Register = ({ setCurrentForm }) => {
     const isValid = await validateFields();
     if (!isValid) return;
 
-    const data = { 
-      full_name, 
-      email, 
-      password, 
-      dob, 
-      phone, 
-      gender, 
-      address, 
-      role: "2", 
-      status: "active", 
-      tickets: [] 
+    const data = {
+      full_name,
+      email,
+      password,
+      dob,
+      phone,
+      gender,
+      address,
+      role: "2",
+      status: "active",
+      tickets: []
     };
 
     try {
       const response = await postData("accounts", data);
       console.log("Registration successful", response);
-      setShowSuccessModal(true); // Show modal first
-      // Remove the immediate redirect
-      // setCurrentForm("login"); // This line should be removed
+      setShowSuccessModal(true);
     } catch (error) {
       console.error("Registration error:", error);
       setErrorMessage("An error occurred while registering");
@@ -111,9 +109,6 @@ const Register = ({ setCurrentForm }) => {
     <>
       <Form onSubmit={handleRegister}>
         <h2>Đăng ký</h2>
-        {/* Form fields here - copy from original component */}
-        {/* I'm showing just a few fields as examples, add all others similarly */}
-        
         <InputGroup className="mb-3">
           <InputGroup.Text>
             <i className="bi bi-person"></i>
@@ -308,12 +303,15 @@ const Register = ({ setCurrentForm }) => {
 
         {errorMessage && <p className="text-danger">{errorMessage}</p>}
 
-        <Button style={{ marginBottom: "5px" }} variant="secondary" onClick={handleCancel}>
-          <i className="bi bi-x-circle"> Hủy</i>
-        </Button>
-        <Button type="submit" className="btn-warning w-100">
-          <i className="bi bi-person-plus-fill"> Đăng ký</i>
-        </Button>
+        <div className="d-flex justify-content-between gap-2">
+          <Button style={{ marginBottom: "5px" }} variant="secondary" onClick={handleCancel}>
+            <i className="bi bi-x-circle"> Hủy</i>
+          </Button>
+          <Button type="submit" className="btn-warning w-100">
+            <i className="bi bi-person-plus-fill"> Đăng ký</i>
+          </Button>
+        </div>
+
       </Form>
 
       <Modal
@@ -332,8 +330,8 @@ const Register = ({ setCurrentForm }) => {
           <p>Tài Khoản Của Bạn Đã Được Tạo Thành Công. Vui Lòng Đăng Nhập Để Trải Nghiệm!</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button 
-            variant="secondary" 
+          <Button
+            variant="secondary"
             onClick={() => {
               setShowSuccessModal(false);
               setCurrentForm("login"); // Redirect after clicking close

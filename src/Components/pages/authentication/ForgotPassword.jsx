@@ -219,17 +219,17 @@ const ForgotPassword = ({ setCurrentForm }) => {
         </>
       )}
 
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between gap-2">
         <Button
           variant="secondary"
           onClick={() => setCurrentForm("login")}
           type="button"
         >
-          <i className="bi bi-arrow-left"></i> Quay lại
+          <i className="bi bi-x-circle"> Hủy</i>
         </Button>
 
         <Button
-          variant="primary"
+          variant="warning"
           type="submit"
           disabled={isLoading}
         >

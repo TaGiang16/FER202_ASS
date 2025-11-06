@@ -76,11 +76,6 @@ button:hover {
   align-items: center;
 }
 
-.terms label a {
-  color: #dd1b1b;
-  text-decoration: none;
-}
-
 .terms input {
   margin-right: 10px;
 }

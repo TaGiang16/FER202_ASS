@@ -15,11 +15,11 @@ const LoginRegister = () => {
         <Card.Body>
           <div className="tabs mb-4">
             <Button
-              variant="outline-danger"
+              variant="outline-warning"
               className={`me-2 ${currentForm === "login" ? "active-tab" : ""}`}
               onClick={() => setCurrentForm("login")}
             >
-              <i className="bi bi-box-arrow-in-right"> Đăng nhập</i>
+              <i className="bi bi-person-plus-fill"> Đăng nhập</i>
             </Button>
             <Button
               variant="outline-warning"
