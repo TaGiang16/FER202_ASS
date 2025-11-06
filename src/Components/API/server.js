@@ -25,8 +25,8 @@ const vnpayConfig = {
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "kubinduong2002@gmail.com",
-        pass: "wubr bysj fvrk rvju", // App Password của bạn
+        user: "dinhdung2812@gmail.com",
+        pass: "yuiq ijwi czvz kszy", // App Password của bạn
     },
 });
 
@@ -54,7 +54,7 @@ app.post("/api/forgot-password", (req, res) => {
 
     // Gửi email
     const mailOptions = {
-        from: "kubinduong2002@gmail.com",
+        from: "dinhdung2812@gmail.com",
         to: email,
         subject: "Đặt lại mật khẩu của bạn",
         html: `
@@ -227,7 +227,7 @@ app.get("/payment-result", (req, res) => {
 // Hàm gửi email
 const sendTicketEmail = (userEmail, ticketInfo) => {
     const mailOptions = {
-        from: "kubinduong2002@gmail.com",  // Email người gửi
+        from: "dinhdung2812@gmail.com",  // Email người gửi
         to: userEmail,  // Địa chỉ email người nhận
         subject: `Thông tin vé đặt chỗ - ${ticketInfo.movieTitle}`,
         html: `
@@ -297,7 +297,7 @@ app.post("/api/confirm-booking", (req, res) => {
 
     // Gửi email xác nhận
     const mailOptions = {
-        from: "kubinduong2002@gmail.com",
+        from: "dinhdung2812@gmail.com",
         to: userEmail,
         subject: "Xác nhận đặt vé",
         html: `

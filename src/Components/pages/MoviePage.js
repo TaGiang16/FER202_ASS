@@ -2,9 +2,8 @@ import { FaPlay } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import "../../CSS/MoviePage.css";
 import { Modal, Button, Table } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { IoTicketOutline } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
 
 function MoviePage() {
   const [movie, setMovie] = useState([]);
@@ -20,7 +19,13 @@ function MoviePage() {
   const [language, setLanguage] = useState([]);
   const [showTime, setShowTime] = useState([]);
   const navigate = useNavigate();
+  const location = useLocation();
 
+  // ✅ Get search query from URL
+  const searchParams = new URLSearchParams(location.search);
+  const searchQuery = searchParams.get("search")?.toLowerCase().trim() || "";
+
+  // ✅ Fetch all required data
   useEffect(() => {
     fetch("http://localhost:3001/movies")
       .then((response) => response.json())
@@ -37,22 +42,23 @@ function MoviePage() {
       .then((data) => setMovieType(data))
       .catch((error) => console.error("Error fetching movie types:", error));
 
-    fetch(`http://localhost:3001/cinema/1`)
+    fetch("http://localhost:3001/cinema/1")
       .then((response) => response.json())
       .then((data) => setCinema(data))
-      .catch((error) => console.error("Error fetching showtimes:", error));
+      .catch((error) => console.error("Error fetching cinema:", error));
 
-    fetch(`http://localhost:3001/languages`)
+    fetch("http://localhost:3001/languages")
       .then((response) => response.json())
       .then((data) => setLanguage(data))
-      .catch((error) => console.error("Error fetching showtimes:", error));
+      .catch((error) => console.error("Error fetching languages:", error));
   }, []);
 
-
+  // ✅ Filter by movie type (tab)
   const handleMovieTypeFilter = (type) => {
     setSelectedMovieType(type.id);
   };
 
+  // ✅ Booking handler
   const handleBookTicket = (movieId) => {
     fetch(`http://localhost:3001/movies/${movieId}`)
       .then((response) => response.json())
@@ -66,15 +72,14 @@ function MoviePage() {
           setShowTime([]);
           setSelectedDate("");
         }
-  
+
         setShowBookingModal(true);
         setShowModal(false);
         setSelectedShowtime(null);
       });
   };
-  
 
-  console.log(showTime);
+  // ✅ Formatting functions
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("vi-VN", {
@@ -83,6 +88,7 @@ function MoviePage() {
       month: "2-digit",
     });
   };
+
   const formatTime = (timeString) => {
     const time = new Date(`1970-01-01T${timeString}`);
     return time.toLocaleTimeString("vi-VN", {
@@ -91,17 +97,24 @@ function MoviePage() {
       hour12: false,
     });
   };
-  const filteredData = movie.filter(
-    (movies) => movies.movie_type == selectedMovieType
-  );
 
+  // ✅ Filter movies
+  const filteredData = movie.filter((m) => {
+    const matchesType = m.movie_type == selectedMovieType;
+    const matchesSearch =
+      !searchQuery || m.title.toLowerCase().includes(searchQuery);
+    return matchesType && matchesSearch;
+  });
+
+  // ✅ Helper functions
   const getGenreNames = (genreIds) =>
     genreIds
       .map((id) => genres.find((genre) => genre.id == id)?.name)
+      .filter(Boolean)
       .join(", ");
 
   const getLanguageName = (languageId) =>
-    language.find((language) => language.id == languageId)?.name;
+    language.find((lang) => lang.id == languageId)?.name;
 
   const openModal = (movie) => {
     setSelectedMovie(movie);
@@ -126,16 +139,20 @@ function MoviePage() {
   const handleCloseModal = () => {
     setSelectedShowtime(null);
   };
+
   const handleConfirmBooking = () => {
     if (selectedShowtime && selectedMovie) {
-      navigate(`/booking/${selectedMovie}`, { 
-        state: { showtimeId: selectedShowtime.id, movieId: selectedMovie.id }
+      navigate(`/booking/${selectedMovie}`, {
+        state: {
+          showtimeId: selectedShowtime.id,
+          movieId: selectedMovie.id,
+        },
       });
     } else {
       console.error("Movie or Showtime not selected");
     }
   };
-  
+
   const handleDateClick = (date) => {
     setSelectedDate(date);
   };
@@ -147,6 +164,7 @@ function MoviePage() {
   return (
     <>
       <div className="movie-page-content">
+        {/* ✅ Movie type navigation */}
         <nav className="navi">
           {movieType.length > 0 ? (
             movieType.map((type) => (
@@ -167,54 +185,56 @@ function MoviePage() {
           )}
         </nav>
 
+        {/* ✅ Movie list display */}
         <div className="movie-list">
           {filteredData.length > 0 ? (
-            filteredData.map((movie) => {
-              return (
-                <div className="movie-items" key={movie.id}>
-                  <div className="image-container">
-                    <img
-                      style={{ height: "400px" }}
-                      src={
-                        movie.poster || "https://via.placeholder.com/200x300"
-                      }
-                      alt={movie.title}
-                    />
-                    <div
-                      className="overlay-icon"
-                      onClick={() => openModal(movie)}
-                    >
-                      <FaPlay size={40} color="white" />
-                    </div>
+            filteredData.map((movie) => (
+              <div className="movie-items" key={movie.id}>
+                <div className="image-container">
+                  <img
+                    style={{ height: "400px" }}
+                    src={
+                      movie.poster ||
+                      "https://via.placeholder.com/200x300?text=No+Image"
+                    }
+                    alt={movie.title}
+                  />
+                  <div
+                    className="overlay-icon"
+                    onClick={() => openModal(movie)}
+                  >
+                    <FaPlay size={40} color="white" />
                   </div>
-                  <Link to={`/movie/${movie.id}`}>{movie.title}</Link>
-                  <ul>
-                    <li>
-                      <span>Thể loại:</span> {getGenreNames(movie.genre_ids)}
-                    </li>
-                    <li>
-                      <span>Thời lượng:</span> {movie.duration || "N/A"} phút
-                    </li>
-                    <li>
-                      <span>Ngày khởi chiếu:</span>{" "}
-                      {movie.release_date || "N/A"}
-                    </li>
-                  </ul>
-                  <Button onClick={() => handleBookTicket(movie.id)}>
-                    <IoTicketOutline
-                      style={{ marginRight: "8px", fontSize: "1.5rem" }}
-                    />
-                    Đặt vé
-                  </Button>
                 </div>
-              );
-            })
+
+                <Link to={`/movie/${movie.id}`}>{movie.title}</Link>
+                <ul>
+                  <li>
+                    <span>Thể loại:</span> {getGenreNames(movie.genre_ids)}
+                  </li>
+                  <li>
+                    <span>Thời lượng:</span> {movie.duration || "N/A"} phút
+                  </li>
+                  <li>
+                    <span>Ngày khởi chiếu:</span> {movie.release_date || "N/A"}
+                  </li>
+                </ul>
+
+                <Button onClick={() => handleBookTicket(movie.id)}>
+                  <IoTicketOutline
+                    style={{ marginRight: "8px", fontSize: "1.5rem" }}
+                  />
+                  Đặt vé
+                </Button>
+              </div>
+            ))
           ) : (
-            <p>Đang load phim</p>
+            <p>Không có phim phù hợp.</p>
           )}
         </div>
       </div>
 
+      {/* ✅ Trailer modal */}
       <Modal show={showModal} onHide={closeModal} centered size="lg">
         <Modal.Header closeButton>
           <Modal.Title>Trailer: {selectedMovie?.title}</Modal.Title>
@@ -232,12 +252,15 @@ function MoviePage() {
         </Modal.Body>
       </Modal>
 
+      {/* ✅ Booking modal */}
       <Modal show={showBookingModal} onHide={closeModal} centered size="lg">
         <Modal.Header closeButton>
           <Modal.Title>Lịch chiếu: {selectedMovie?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h5 style={{ margin: "1rem", textAlign: "center", fontSize: "2rem" }}>
+          <h5
+            style={{ margin: "1rem", textAlign: "center", fontSize: "2rem" }}
+          >
             {cinema.name}
           </h5>
           <div className="container">
@@ -248,16 +271,18 @@ function MoviePage() {
                 .map((date) => (
                   <div
                     key={date}
-                    className={`date-item ${selectedDate === date ? "active" : ""
-                      }`}
+                    className={`date-item ${
+                      selectedDate === date ? "active" : ""
+                    }`}
                     onClick={() => handleDateClick(date)}
                   >
                     {formatDate(date)}
                   </div>
                 ))}
             </div>
+
             <div className="schedule">
-              <h2>{getLanguageName(movie.language_id)}</h2>
+              <h2>{getLanguageName(selectedMovie?.language_id)}</h2>
               {filteredShowtimes.length > 0 ? (
                 <div className="time-slot">
                   {filteredShowtimes.map((showtime) => (
@@ -267,7 +292,9 @@ function MoviePage() {
                       onClick={() => handleShowtimeClick(showtime)}
                     >
                       <p>{formatTime(showtime.start_time)}</p>
-                      <span>Giá vé: {showtime.price.toLocaleString()} VNĐ</span>
+                      <span>
+                        Giá vé: {showtime.price.toLocaleString()} VNĐ
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -278,6 +305,8 @@ function MoviePage() {
           </div>
         </Modal.Body>
       </Modal>
+
+      {/* ✅ Confirm booking modal */}
       <Modal
         show={selectedShowtime}
         onHide={handleCloseModal}
@@ -312,12 +341,12 @@ function MoviePage() {
           )}
         </Modal.Body>
         <Modal.Footer>
-        <Button variant="primary" onClick={handleConfirmBooking}>
-      <IoTicketOutline
-        style={{ marginRight: "8px", fontSize: "1.5rem" }}
-      />
-      Đặt vé
-    </Button>
+          <Button variant="primary" onClick={handleConfirmBooking}>
+            <IoTicketOutline
+              style={{ marginRight: "8px", fontSize: "1.5rem" }}
+            />
+            Đặt vé
+          </Button>
         </Modal.Footer>
       </Modal>
     </>

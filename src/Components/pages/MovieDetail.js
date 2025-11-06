@@ -102,8 +102,8 @@ const MovieDetail = () => {
     <div className="movie-detail">
       <main className="content">
         <div className="breadcrumb" style={{ fontSize: "1.5rem" }}>
-          <a href="#">Home</a> &gt;{" "}
-          <span className="highlight">{movie.title}</span>
+          <a href="/">Home </a> &gt;{" "}
+          <span className="highlight"> {movie.title}</span>
         </div>
 
         <div className="movie-info">

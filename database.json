@@ -17,11 +17,11 @@
       "id": "2",
       "password": "Lucduong2002",
       "role": "2",
-      "dob": "2002-10-03",
+      "dob": "1999-12-28",
       "address": "123, Hà Đông, Hà Nội",
-      "email": "lucduongty@gmail.com",
-      "phone": "0354994218",
-      "full_name": "Dương Văn Lực",
+      "email": "dinhdung2812@gmail.com",
+      "phone": "0361234567",
+      "full_name": "Dũng Đình",
       "status": "active",
       "gender": "Nam",
       "tickets": [
@@ -147,6 +147,66 @@
           "totalPrice": 240000,
           "screen": "Phòng Chiếu Số 2",
           "status": "inactive"
+        },
+        {
+          "id": "4c93ebb8-eda5-4a7f-a90d-fa1d0025329a",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "C9",
+            "C8"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 240000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "8b4e3b99-cd97-448b-b48f-4711fba9626c",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "A7",
+            "A8"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 240000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "24f0ea00-5210-46a0-853f-742388bbe921",
+          "movie": "Linh Miêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "B6"
+          ],
+          "date": "24-11-2024",
+          "startTime": "15:00",
+          "endTime": "17:42",
+          "totalPrice": 120000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        },
+        {
+          "id": "2a8327df-1cef-4a1a-a479-b827e25b2d30",
+          "movie": "Công tử bạc liêu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "A6",
+            "A7",
+            "B8"
+          ],
+          "date": "18-12-2024",
+          "startTime": "19:06",
+          "endTime": "20:10",
+          "totalPrice": 300000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
         }
       ]
     },
@@ -175,6 +235,63 @@
           "startTime": "19:00",
           "endTime": "21:55",
           "totalPrice": 360000,
+          "screen": "Phòng Chiếu Số 1",
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "ce83",
+      "full_name": "Pham Quang Huy",
+      "email": "huycan8723@gmail.com",
+      "password": "Huycan8723@",
+      "dob": "2003-07-08",
+      "phone": "0368887274",
+      "gender": "Male",
+      "address": "Ha Noi",
+      "role": "2",
+      "status": "active",
+      "tickets": [
+        {
+          "id": "0b962c40-1a74-4b0d-a55f-5ef79f2ec5fa",
+          "movie": "Quỷ Treo Đầu",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "H8",
+            "H7"
+          ],
+          "date": "05-12-2024",
+          "startTime": "10:30",
+          "endTime": "13:15",
+          "totalPrice": 220000,
+          "screen": "Phòng Chiếu Số 2",
+          "status": "inactive"
+        }
+      ]
+    },
+    {
+      "id": "cc71",
+      "full_name": "Dũng",
+      "email": "bommiedayne@gmail.com",
+      "password": "Abc123456",
+      "dob": "0004-12-28",
+      "phone": "0986633965",
+      "gender": "Male",
+      "address": "Hà Nội",
+      "role": "2",
+      "status": "active",
+      "tickets": [
+        {
+          "id": "92c08a93-7005-4574-bc79-dd6a5f2127e0",
+          "movie": "CƯỜI XUYÊN BIÊN GIỚI",
+          "cinema": "Rạp Chiếu Movie88",
+          "seats": [
+            "A8"
+          ],
+          "date": "05-12-2024",
+          "startTime": "20:00",
+          "endTime": "22:55",
+          "totalPrice": 120000,
           "screen": "Phòng Chiếu Số 1",
           "status": "inactive"
         }
@@ -255,6 +372,16 @@
       "id": "7",
       "name": "Hài",
       "status": "active"
+    },
+    {
+      "id": "8",
+      "name": "Nhạc kịch",
+      "status": "active"
+    },
+    {
+      "id": "9",
+      "name": "Lãng mạn",
+      "status": "active"
     }
   ],
   "languages": [
@@ -282,6 +409,11 @@
       "id": "0984",
       "name": "Tiếng Hàn",
       "status": "active"
+    },
+    {
+      "id": "83f0",
+      "name": "Tiếng Trung",
+      "status": "active"
     }
   ],
   "movies": [
@@ -299,8 +431,8 @@
       "movie_type": "1",
       "release_date": "22-11-2024",
       "video_url": "https://www.youtube.com/embed/QBMhv3FLW_Q",
-      "banner": "https://files.betacorp.vn/media/images/2024/11/14/1702x621-23-114246-141124-41.jpg",
-      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f14%2f400x633%2D16%2D114807%2D141124%2D90.jpg",
+      "banner": "https://i.ytimg.com/vi/4oxoPMxBO6s/maxresdefault.jpg",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSlEcAAjqGljDvz66rauoSutgvdOGtIocnPg&s",
       "status": "active",
       "showtimes": [
         {
@@ -355,8 +487,8 @@
       "movie_type": "2",
       "release_date": "29-11-2024",
       "video_url": "https://www.youtube.com/embed/yjL9YgnmVlg",
-      "banner": "https://files.betacorp.vn/media/images/2024/11/20/1702x621-24-162735-201124-55.jpg",
-      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f20%2f400x633%2D17%2D162001%2D201124%2D70.jpg",
+      "banner": "https://i.ytimg.com/vi/kyx3M2Kcyyo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmCuemsMKkJ9dXOWePokcBaATq1g",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4DP5nW1q6CBAujwD3d5KM2z07wPUElsQQQ&s",
       "status": "active",
       "showtimes": [
         {
@@ -393,8 +525,8 @@
       "movie_type": "3",
       "release_date": "29-11-2024",
       "video_url": "https://www.youtube.com/embed/bMcNeq229Ms",
-      "banner": " https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/b/l/blue.jpg",
-      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f22%2f400x633%2D110130%2D221124%2D27.jpg",
+      "banner": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/b/l/blue.jpg",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5UlHivjfZRiN-ZtLPjS1AWBu_6TQjmAQuHA&s",
       "status": "active",
       "showtimes": [
         {
@@ -432,7 +564,7 @@
       "release_date": "15-11-2024",
       "video_url": "https://www.youtube.com/embed/c-XbI-G6bqE",
       "banner": "https://i.ytimg.com/vi/4bdsuhHnj1c/maxresdefault.jpg",
-      "poster": "https://files.betacorp.vn/media%2fimages%2f2024%2f11%2f08%2f400wx633h%2D1%2D154452%2D081124%2D12.jpg",
+      "poster": "https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/a/m/amazon-teaser_poster-full.jpg",
       "status": "active",
       "showtimes": [
         {
@@ -456,7 +588,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Công tử bạc liêu",
       "genre_ids": [
         "2",
@@ -465,24 +597,124 @@
       "description": "Phim hay quá đi ",
       "director": "Phạm Quang Huy",
       "actor": "Lực Sỹ",
-      "duration": "122123",
+      "duration": "122",
       "language_id": "2",
       "movie_type": "1",
       "release_date": "2024-12-10",
       "video_url": "https://www.youtube.com/embed/QBMhv3FLW_Q",
       "banner": "https://www.cgv.vn/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/o/n/onl_rolling_980x448_8.jpg",
       "poster": [
-        "https://files.betacorp.vn/media%2fimages%2f2024%2f10%2f16%2f400wx633h%2D162649%2D161024%2D28.jpg"
+        "https://www.cgv.vn/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/c/_/c_ng_t_b_c_li_u_-_payoff_poster_-_kc_06.12.2024_1_.jpg"
       ],
       "status": "active",
       "showtimes": [
         {
+          "id": "11",
           "cinema_id": "",
           "screen_id": "2",
           "date": "2024-12-18",
-          "start_time": "19:06",
+          "start_time": "19:06:00",
           "price": 100000,
-          "end_time": "20:10"
+          "end_time": "20:10:00"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Nhà Bà Nữ",
+      "genre_ids": [
+        "6"
+      ],
+      "description": "Nhà Bà Nữ là một bộ phim hài - chính kịch của Việt Nam do Trấn Thành đạo diễn, xoay quanh những mâu thuẫn trong một gia đình nhiều thế hệ do bà Ngọc Nữ đứng đầu. Bộ phim tập trung vào cuộc sống của gia đình bà Nữ, một người bán bánh canh cua, với những xung đột thế hệ, mâu thuẫn trong hôn nhân và sự kiểm soát quá mức của bà đối với các con, được lấy cảm hứng từ các câu chuyện đời thực và bạn bè. ",
+      "director": "Trấn Thành",
+      "actor": "Uyển Ân",
+      "duration": "102",
+      "language_id": "2",
+      "movie_type": "1",
+      "release_date": "2023-11-1",
+      "video_url": "https://www.youtube.com/embed/IkaP0KJWTsQ?si=Sq39Ik29g_8zZJVn",
+      "banner": "https://touchcinema.com/storage/slider-app/1440wx600h-5-1674325061.jpg",
+      "poster": [
+        "https://upload.wikimedia.org/wikipedia/vi/thumb/6/6f/%C3%81p_ph%C3%ADch_phim_Nh%C3%A0_b%C3%A0_N%E1%BB%AF.jpg/250px-%C3%81p_ph%C3%ADch_phim_Nh%C3%A0_b%C3%A0_N%E1%BB%AF.jpg"
+      ],
+      "status": "active",
+      "showtimes": [
+        {
+          "id": "12",
+          "cinema_id": "1",
+          "screen_id": "2",
+          "date": "2023-11-1",
+          "start_time": "19:00:00",
+          "price": 100000,
+          "end_time": "20:50:00"
+        },
+        {
+          "id": "13",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2023-11-2",
+          "start_time": "17:00:00",
+          "price": 100000,
+          "end_time": "18:50:00"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Wicked",
+      "genre_ids": [
+        "8",
+        "9"
+      ],
+      "description": "Wicked là một bộ phim điện ảnh Anh – Mỹ thuộc thể loại kỳ ảo, nhạc kịch ra mắt năm 2024, do Jon M. Chu đạo diễn. Phim kể về câu chuyện của Elphaba (Phù thủy Xanh) và Glinda (Phù thủy Tốt) khi họ còn là sinh viên tại Đại học Shiz ở Vùng đất Oz, xoay quanh mối quan hệ phức tạp và hành trình của họ trở thành những phù thủy nổi tiếng. Tác phẩm đề cập đến các chủ đề như tình bạn, sự chấp nhận, dũng cảm và ranh giới giữa thiện và ác. ",
+      "director": "Jon M. Chu",
+      "actor": "Ariana Grande, Cynthia Erivo",
+      "duration": "160",
+      "language_id": "3",
+      "movie_type": "1",
+      "release_date": "2024-11-22",
+      "video_url": "https://www.youtube.com/embed/6COmYeLsz4c",
+      "banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4tzC2lYo3ZSDvbZMo6D4SfHFVEN4gXkTdg&s",
+      "poster": [
+        "https://www.cgv.vn/media/catalog/product/cache/3/image/c5f0a1eff4c394a251036189ccddaacd/w/k/wkd_forestduo_470x700.jpg"
+      ],
+      "status": "active",
+      "showtimes": [
+        {
+          "id": "14",
+          "cinema_id": "1",
+          "screen_id": "2",
+          "date": "2024-11-22",
+          "start_time": "15:00:00",
+          "price": 100000,
+          "end_time": "17:50:00"
+        },
+        {
+          "id": "15",
+          "cinema_id": "1",
+          "screen_id": "1",
+          "date": "2024-11-22",
+          "start_time": "19:00:00",
+          "price": 100000,
+          "end_time": "21:50:00"
+        },
+        {
+          "id": "16",
+          "cinema_id": "2",
+          "screen_id": "2",
+          "date": "2024-11-23",
+          "start_time": "15:00:00",
+          "price": 100000,
+          "end_time": "17:50:00"
+        },
+        {
+          "id": "17",
+          "cinema_id": "2",
+          "screen_id": "1",
+          "date": "2024-11-23",
+          "start_time": "19:00:00",
+          "price": 100000,
+          "end_time": "21:50:00"
         }
       ]
     }

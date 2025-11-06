@@ -1,9 +1,10 @@
 import Carousel from "react-bootstrap/Carousel";
 import { FaPlay } from "react-icons/fa";
 import "../../CSS/HomePage.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Form, InputGroup } from "react-bootstrap";
 
 function HomePage() {
   const [data, setData] = useState([]);
@@ -60,12 +61,18 @@ function HomePage() {
   return (
     <>
       <Carousel slide interval={5000}>
-        {data.map((movie, index) => (
-          <Carousel.Item key={index}>
+        {data.map((movie, i) => (
+          <Carousel.Item key={i}>
             <img
               className="d-block w-100"
               src={movie.banner}
-              alt={`Slide ${index + 1}`}
+              alt={`Slide ${i + 1}`}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
           </Carousel.Item>
         ))}
